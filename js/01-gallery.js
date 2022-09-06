@@ -28,9 +28,11 @@ function galleryElem (event) {
 
     function modalEscClose(event) {
         if (event.key === "Escape") {
-         instance.close()    
+          instance.close()
+
+          document.removeEventListener("keydown", modalEscClose) 
         }
-    document.removeEventListener("keydown", modalEscClose)
+    
     }
     document.addEventListener("keydown", modalEscClose)
    
