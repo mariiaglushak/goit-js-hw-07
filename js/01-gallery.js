@@ -24,7 +24,7 @@ function galleryElem (event) {
       return;
     }
      const instance = basicLightbox.create(`<img src="${event.target.dataset.source}">`)
-    instance.show()
+  instance.show();
 
     function modalEscClose(event) {
         if (event.key === "Escape") {
